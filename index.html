@@ -4,129 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EasyAINotes</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
     <style>
         body {
-            margin: 0;
-            padding: 0;
             font-family: Arial, sans-serif;
             background: #e6f2ff; /* Soft blue background */
         }
 
-        .navbar {
-            background-color: #005a87; /* Darker blue for the navbar */
+        .navbar-custom {
+            background-color: #005a87; /* Dark blue */
             color: white;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0.5em 2em;
         }
 
-        .navbar ul {
-            list-style: none;
-            display: flex;
-            gap: 1em;
-        }
-
-        .navbar a {
-            text-decoration: none;
+        .navbar-custom a {
             color: white;
             font-weight: bold;
         }
 
         .hero {
-            background: #99ccff; /* Lighter blue for the hero section */
+            background: #99ccff; /* Light blue */
             color: #004d66; /* Dark blue text color */
             padding: 2em;
             text-align: center;
         }
 
-        .hero h1 {
-            font-size: 2.5em;
-            margin-bottom: 0.5em;
-        }
-
-        .hero p {
-            font-size: 1.2em;
-            margin-bottom: 1em;
-        }
-
-        .button {
-            display: inline-block;
-            padding: 0.5em 1em;
+        .feature-box {
             background: white;
-            color: #004d66;
-            text-decoration: none;
-            border-radius: 0.3em;
-            box-shadow: 0 0.3em 0.3em rgba(0, 0, 0, 0.2);
-            transition: background-color 0.3s, color 0.3s;
+            border: 1px solid #99ccff;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px 0;
         }
 
-        .button:hover {
-            background: #cceeff; /* Lighter blue for hover effect */
-            color: #003d52;
-        }
-
-        .footer {
-            background-color: #005a87;
+        .footer-custom {
+            background-color: #005a87; /* Dark blue */
             color: white;
             text-align: center;
             padding: 1em 0;
-            position: relative;
-            bottom: 0;
-            width: 100%;
+        }
+
+        .button-custom {
+            background: white;
+            color: #004d66;
+            border-radius: 0.3em;
+        }
+
+        .button-custom:hover {
+            background: #cceeff; /* Light blue */
+            color: #003d52;
         }
     </style>
 </head>
 <body>
-    <div class="navbar">
-        <div class="logo">
-            <a href="#">LOGO</a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Our Company</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Reviews</a></li>
-                <li><a href="#">Login</a></li>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <a class="navbar-brand" href="#">LOGO</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Our Company</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">News</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Reviews</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
             </ul>
-        </nav>
-    </div>
+        </div>
+    </nav>
 
     <div class="hero">
-        <h1>Welcome to EasyAINotes: Revolutionizing Medical Documentation with AI</h1>
-        <p>At EasyAINotes, we are dedicated to simplifying the complexities of medical documentation. Our cutting-edge AI-powered tool is designed to assist healthcare professionals in capturing and organizing their medical notes effortlessly.</p>
-        <h2>Empowering Healthcare Professionals</h2>
-        <p>In the fast-paced world of medicine, efficient and accurate record-keeping is crucial. Our AI tool streamlines this process, allowing medical staff to focus more on patient care and less on paperwork. With our technology, note-taking is quicker, easier, and more accurate.</p>
-        <div class="features-section">
-            <h2>Innovative Features for Seamless Documentation</h2>
-            <p>Our tool boasts a range of features tailored to the needs of the medical community:</p>
-            <ul>
-                <li><strong>Voice-to-Text Conversion:</strong> Effortlessly dictate notes, and our AI will transcribe them with precision.</li>
-                <li><strong>Intelligent Organization:</strong> Automatically categorizes and files notes for easy retrieval.</li>
-                <li><strong>Customizable Templates:</strong> Pre-designed templates for various medical scenarios to save time.</li>
-                <li><strong>Secure and Confidential:</strong> Rigorous data protection to maintain patient confidentiality.</li>
-            </ul>
-        
-            <h2>Why Choose Us?</h2>
-            <ul>
-                <li><strong>Save Time:</strong> Reduce hours spent on documentation.</li>
-                <li><strong>Enhance Accuracy:</strong> Minimize errors with AI-assisted note-taking.</li>
-                <li><strong>Improve Patient Care:</strong> More time for patients, less on paperwork.</li>
-                <li><strong>User-Friendly:</strong> Intuitive design for ease of use.</li>
-            </ul>
-        
-            <h2>Join Us in Transforming Medical Documentation</h2>
-            <p>Experience the future of medical note-taking. Simplify your practice, enhance your efficiency, and dedicate more time to what matters most - your patients.</p>
-            <p>For inquiries or to schedule a demo, contact us at [contact information].</p>
-        </div>
-        
-        
-        <a href="#" class="button">Learn More</a>
+        <h1>Welcome to EasyAINotes</h1>
+        <p>Revolutionizing Medical Documentation with AI</p>
+        <img src="robot.png" alt="Image Description" class="img-fluid">
+        <a href="#" class="btn button-custom mt-3">Learn More</a>
     </div>
 
-    <div class="footer">
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-6 feature-box">
+                <h2>Innovative Features</h2>
+                <p>Our tool boasts a range of features tailored to the needs of the medical community:</p>
+                    <ul>
+                    <li><strong>Voice-to-Text Conversion:</strong> Effortlessly dictate notes, and our AI will transcribe them with precision.</li>
+                    <li><strong>Intelligent Organization:</strong> Automatically categorizes and files notes for easy retrieval.</li>
+                    <li><strong>Customizable Templates:</strong> Pre-designed templates for various medical scenarios to save time.</li>
+                    <li><strong>Secure and Confidential:</strong> Rigorous data protection to maintain patient confidentiality.</li>
+                    </ul>
+
+            </div>
+            <div class="col-md-6 feature-box">
+                <h2>Why Choose Us?</h2>
+                <ul>
+                    <li><strong>Save Time:</strong> Reduce hours spent on documentation.</li>
+                    <li><strong>Enhance Accuracy:</strong> Minimize errors with AI-assisted note-taking.</li>
+                    <li><strong>Improve Patient Care:</strong> More time for patients, less on paperwork.</li>
+                    <li><strong>User-Friendly:</strong> Intuitive design for ease of use.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-custom">
         <p>&copy; 2024 EasyAINotes. All rights reserved.</p>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>
