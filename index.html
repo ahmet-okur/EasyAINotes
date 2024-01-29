@@ -5,40 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Business Name</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        /* Basic Reset */
+        * {
             margin: 0;
             padding: 0;
-            background: #f4f4f4;
-            text-align: center;
+            box-sizing: border-box;
         }
-        .header {
-            background: #333;
-            color: #fff;
-            padding: 10px 0;
-        }
-        .content {
-            margin: 20px;
+
+        /* Body and Overall Layout */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
             padding: 20px;
-            background: #fff;
         }
+
+        /* Header Styles */
+        .header {
+            background-color: #005a87;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        /* Content Styles */
+        .content {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        /* Footer Styles */
         .footer {
-            background: #333;
+            background-color: #333;
             color: #fff;
             text-align: center;
             padding: 10px 0;
-            position: fixed;
+            position: relative;
             bottom: 0;
             width: 100%;
+        }
+
+        /* Utility Classes */
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 700px) {
+            .container {
+                width: 95%;
+            }
         }
     </style>
 </head>
 <body>
     <div class="header">
-        <h1>Welcome to EasyAINotes</h1>
+        <div class="container">
+            <h1>Welcome to EasyAINotes</h1>
+        </div>
     </div>
 
-    <div class="content">
+    <div class="content container">
         <h2>About Us</h2>
         <p>Brief description of your business, its history, mission, and vision.</p>
 
@@ -46,13 +77,15 @@
         <p>Information about the services or products you offer.</p>
 
         <h2>Contact Us</h2>
-        <p>Email: a.okur217@gmail.com</p>
+        <p>Email: contact@example.com</p>
         <p>Phone: 123-456-7890</p>
         <p>Address: 123 Business Street, Business City, BC 12345</p>
     </div>
 
     <div class="footer">
-        <p>&copy; 2024 [Your Business Name]. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 [Your Business Name]. All rights reserved.</p>
+        </div>
     </div>
 </body>
 </html>
