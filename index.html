@@ -3,89 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Business Name</title>
+    <title>EasyAINotes</title>
     <style>
-        /* Basic Reset */
-        * {
+        body {
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            background: #e6f2ff; /* Soft blue background */
         }
 
-        /* Body and Overall Layout */
-        body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f4f4f4;
-            padding: 20px;
+        .navbar {
+            background-color: #005a87; /* Darker blue for the navbar */
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.5em 2em;
         }
 
-        /* Header Styles */
-        .header {
-            background-color: #005a87;
-            color: #fff;
-            padding: 20px 0;
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 1em;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .hero {
+            background: #99ccff; /* Lighter blue for the hero section */
+            color: #004d66; /* Dark blue text color */
+            padding: 2em;
             text-align: center;
         }
 
-        /* Content Styles */
-        .content {
-            background-color: #fff;
-            padding: 20px;
-            margin: 20px 0;
+        .hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
         }
 
-        /* Footer Styles */
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 1em;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 0.5em 1em;
+            background: white;
+            color: #004d66;
+            text-decoration: none;
+            border-radius: 0.3em;
+            box-shadow: 0 0.3em 0.3em rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .button:hover {
+            background: #cceeff; /* Lighter blue for hover effect */
+            color: #003d52;
+        }
+
         .footer {
-            background-color: #333;
-            color: #fff;
+            background-color: #005a87;
+            color: white;
             text-align: center;
-            padding: 10px 0;
+            padding: 1em 0;
             position: relative;
             bottom: 0;
             width: 100%;
         }
-
-        /* Utility Classes */
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 700px) {
-            .container {
-                width: 95%;
-            }
-        }
     </style>
 </head>
 <body>
-    <div class="header">
-        <div class="container">
-            <h1>Welcome to EasyAINotes</h1>
+    <div class="navbar">
+        <div class="logo">
+            <a href="#">LOGO</a>
         </div>
+        <nav>
+            <ul>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Our Company</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Reviews</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </nav>
     </div>
 
-    <div class="content container">
-        <h2>About Us</h2>
-        <p>Brief description of your business, its history, mission, and vision.</p>
-
-        <h2>Our Services</h2>
-        <p>Information about the services or products you offer.</p>
-
-        <h2>Contact Us</h2>
-        <p>Email: contact@example.com</p>
-        <p>Phone: 123-456-7890</p>
-        <p>Address: 123 Business Street, Business City, BC 12345</p>
+    <div class="hero">
+        <h1>SMART IDEAS FOR YOUR MONEY</h1>
+        <p>Professional financial advisers, helping you secure your financial future</p>
+        <a href="#" class="button">Learn More</a>
     </div>
 
     <div class="footer">
-        <div class="container">
-            <p>&copy; 2024 [Your Business Name]. All rights reserved.</p>
-        </div>
+        <p>&copy; 2024 Your Business Name. All rights reserved.</p>
     </div>
 </body>
 </html>
